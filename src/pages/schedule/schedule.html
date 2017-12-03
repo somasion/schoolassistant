@@ -4,14 +4,15 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 
-    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
+		<ion-title>Mein Tag</ion-title>
+    <!--<ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
         All
       </ion-segment-button>
       <ion-segment-button value="favorites">
         Favorites
       </ion-segment-button>
-    </ion-segment>
+    </ion-segment>-->
 
     <ion-buttons end>
       <button ion-button icon-only (click)="presentFilter()">
@@ -19,14 +20,6 @@
       </button>
     </ion-buttons>
   </ion-navbar>
-
-  <ion-toolbar no-border-top>
-    <ion-searchbar color="primary"
-                   [(ngModel)]="queryText"
-                   (ionInput)="updateSchedule()"
-                   placeholder="Search">
-    </ion-searchbar>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -74,7 +67,7 @@
       No Sessions Found
   </ion-list-header>
 
-  <ion-fab bottom right #fab>
+  <!--<ion-fab bottom right #fab>
     <button ion-fab><ion-icon name="share"></ion-icon></button>
     <ion-fab-list side="top">
       <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
@@ -82,7 +75,7 @@
       <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
       <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
     </ion-fab-list>
-  </ion-fab>
+  </ion-fab>-->
 
 
 </ion-content>
