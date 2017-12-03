@@ -1,0 +1,8 @@
+{
+  "name": "schoolassistant",
+  "app_id": "39b90dab",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
